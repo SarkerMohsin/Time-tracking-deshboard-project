@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Time tracking dashboard project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-box bg-[#0f1424] w-full h-screen flex gap-4 justify-center items-center text-white">
+        <section class="report bg-[#1c1f4a] w-1/6 h-3/5 rounded-xl">
+            <div class="bg-[#6f76c8] h-96 rounded-xl flex flex-col justify-around">
+                <div class="w-28 border-4 rounded-full ml-6">
+                    <img src="./images/image-jeremy.png" alt="img/png">
+                </div>
+                <div class="ml-6">
+                    <p>Report for</p>
+                    <h1 class="text-5xl">Jeremy Robson</h1>
+                </div>
+            </div>
+            <div class="bg-[#1c1f4a] rounded-b-x1 h-40 text-2xl">
+                <a href="#"><h1 class="ml-6 p-2 animate-bounce hover:bg-[#f9ca53] hover:text-black">Daily</h1></a>
+                <a href="#"><h1 class="ml-6 p-2 opacity-40 hover:bg-[#f9ca53] hover:text-black hover:opacity-100">Weekly</h1></a>
+                <a href="#"><h1 class="ml-6 p-2 opacity-40 hover:bg-[#f9ca53] hover:text-black hover:opacity-100">Monthly</h1></a>
+            </div>
+        </section>
+        <section class="card-box bg-transparent w-3/6 h-3/5 flex flex-col justify-between">
+            <div class="card-row-one flex justify-around items-center">
+                <div class="card1 w-60 h-64 rounded-xl bg-[#ff8c66] relative">
+                    <img class="absolute top-0 right-0" src="images/icon-work.svg" alt="image/work">
+                    <div class="w-full h-48 rounded-lg bg-[#1c1f4a] absolute bottom-0 hover:contrast-50">
+                        <div class="mx-5 p-5 flex justify-between items-center">
+                            <h1 class="text-2xl">Work</h1>
+                            <h1 class="text-2xl">...</h1>
+                        </div>
+                        <div class="mx-5 pl-5">
+                            <h1 class="workHour text-6xl">5hrs</h1>
+                            <h3 class="py-4">Yesterday - 7hrs</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 w-60 h-64 rounded-xl bg-[#56c2e6] relative">
+                    <img class="absolute top-0 right-0" src="images/icon-play.svg" alt="image/play">
+                    <div class="w-full h-48 rounded-lg bg-[#1c1f4a] absolute bottom-0 hover:contrast-50">
+                        <div class="mx-5 p-5 flex justify-between items-center">
+                            <h1 class="text-2xl">Play</h1>
+                            <h1 class="text-2xl">...</h1>
+                        </div>
+                        <div class="mx-5 pl-5">
+                            <h1 class="playTime text-6xl">1hrs</h1>
+                            <h3 class="py-4">Yesterday - 2hrs</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 w-60 h-64 rounded-xl bg-[#ff5c7c] relative">
+                    <img class="absolute top-0 right-0" src="images/icon-study.svg" alt="image/study">
+                    <div class="w-full h-48 rounded-lg bg-[#1c1f4a] absolute bottom-0 hover:contrast-50">
+                        <div class="mx-5 p-5 flex justify-between items-center">
+                            <h1 class="text-2xl">Study</h1>
+                            <h1 class="text-2xl">...</h1>
+                        </div>
+                        <div class="mx-5 pl-5">
+                            <h1 class="studyTime text-6xl">0hrs</h1>
+                            <h3 class="py-4">Yesterday - 1hrs</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row-two flex justify-around items-center">
+                <div class="card1 w-60 h-64 rounded-xl bg-[#4acf81] relative">
+                    <img class="absolute top-0 right-0" src="images/icon-exercise.svg" alt="image/exercise">
+                    <div class="w-full h-48 rounded-lg bg-[#1c1f4a] absolute bottom-0 hover:contrast-50">
+                        <div class="mx-5 p-5 flex justify-between items-center">
+                            <h1 class="text-2xl">Exercise</h1>
+                            <h1 class="text-2xl">...</h1>
+                        </div>
+                        <div class="mx-5 pl-5">
+                            <h1 class="exercise text-6xl">1hrs</h1>
+                            <h3 class="py-4">Yesterday - 1hrs</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 w-60 h-64 rounded-xl bg-[#7536d3] relative">
+                    <img class="absolute top-0 right-0" src="images/icon-social.svg" alt="image/social">
+                    <div class="w-full h-48 rounded-lg bg-[#1c1f4a] absolute bottom-0 hover:contrast-50">
+                        <div class="mx-5 p-5 flex justify-between items-center">
+                            <h1 class="text-2xl">Social</h1>
+                            <h1 class="text-2xl">...</h1>
+                        </div>
+                        <div class="mx-5 pl-5">
+                            <h1 class="social text-6xl">1hrs</h1>
+                            <h3 class="py-4">Yesterday - 3hrs</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 w-60 h-64 rounded-xl bg-[#f1c65b] relative">
+                    <img class="absolute top-0 right-0" src="images/icon-self-care.svg" alt="image/self-care">
+                    <div class="w-full h-48 rounded-lg bg-[#1c1f4a] absolute bottom-0 hover:contrast-50">
+                        <div class="mx-5 p-5 flex justify-between items-center">
+                            <h1 class="text-2xl">Self-care</h1>
+                            <h1 class="text-2xl">...</h1>
+                        </div>
+                        <div class="mx-5 pl-5">
+                            <h1 class="self-care text-6xl">0hrs</h1>
+                            <h3 class="py-4">Yesterday - 1hrs</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="absolute bottom-0">
+           <h1 class="italic">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="bg-indigo-500 rounded-3xl p-1 text-xs font-semibold">Front-End Mentor</span></a></h1>
+           <h4 class="italic opacity-40">Coded by <a href="#">Mohsin Sarker</a></h4>
+        </div>
+    </div>
+</body>
+</html>
